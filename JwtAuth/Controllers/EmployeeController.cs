@@ -9,6 +9,7 @@ namespace JwtAut.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class EmployeeController : ControllerBase
     {
         private static List<Employee> Employees = new List<Employee>()
@@ -21,7 +22,7 @@ namespace JwtAut.Controllers
         // GET: api/Employee/all
 
         [HttpGet("all")]
-        [Authorize]
+        
         public IActionResult GetAllEmployees()
         {
             return Ok(Employees);

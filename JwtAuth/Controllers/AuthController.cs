@@ -46,7 +46,7 @@ namespace JwtAuth.Controllers
                         new Claim(JwtRegisteredClaimNames.Email, user.Name),
                     });
 
-                    var expires = DateTime.UtcNow.AddDays(1);
+                    var expires = DateTime.UtcNow.AddDays(100);
                     var tokenDescription = new SecurityTokenDescriptor
                     {
                         Subject = subject,
