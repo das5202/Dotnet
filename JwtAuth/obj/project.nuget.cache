@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jJjChA7N8Qy1wZnSaxZh2UiaqtwSXYnZu2ATO6AsG0NL6TPhWsbiVGzbpdcb7LRKgRvLC1reKo5sOmPzZUffeg==",
+  "dgSpecHash": "PlR7nFb+Kpsl+So0egQf0KN+Ul6SMqI4VZqYkHypykwlFS2B0/llBTQjcBp018WX1fmvXvFjdLUPHvaIyJE74A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hites\\Downloads\\Devika\\JwtAuth\\JwtAuth.csproj",
+  "projectFilePath": "C:\\Users\\hites\\Downloads\\DevikaJS\\JwtAuth\\JwtAuth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hites\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\hites\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

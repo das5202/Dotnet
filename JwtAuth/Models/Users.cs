@@ -7,7 +7,7 @@
         public Users(int id, string name)
         {
             Id = id;
-            Name = name;
+            Name= name;
         }
     }
 }
