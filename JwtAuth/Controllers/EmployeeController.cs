@@ -69,7 +69,7 @@ namespace JwtAut.Controllers
         [HttpDelete("delete/{id}")]
         public IActionResult DeleteEmployee(int id)
         {
-            if (id >= 0 && id < Employees.Count)
+            if (id >= 0 && id < Employees.Count) 
             {
                 Employees.RemoveAt(id);
                 return Ok(Employees);

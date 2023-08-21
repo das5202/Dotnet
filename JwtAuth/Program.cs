@@ -68,7 +68,6 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -77,10 +76,10 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Employee APi 6.0");
     });
 }
-
+// Configure the HTTP request pipeline.
 app.UseHttpsRedirection();
 
-app.UseAuthentication(); // Place authentication middleware before authorization
+app.UseAuthentication(); 
 app.UseAuthorization();
 
 app.MapControllers();
