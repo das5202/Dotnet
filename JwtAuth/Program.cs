@@ -28,7 +28,10 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuer = true,
         ValidateAudience = true,
         ValidateLifetime = true, // Set to true to validate token lifetime
-        ValidateIssuerSigningKey = true
+        ValidateIssuerSigningKey = true,
+        ClockSkew = TimeSpan.FromMinutes(1) 
+
+
     };
 });
 
@@ -67,6 +70,13 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 var app = builder.Build();
+app.UseCors(builder =>
+{
+    builder.WithOrigins("http://localhost:3000") // Replace with your frontend's actual origin
+           .AllowAnyHeader()
+           .AllowAnyMethod();
+});
+
 
 if (app.Environment.IsDevelopment())
 {
